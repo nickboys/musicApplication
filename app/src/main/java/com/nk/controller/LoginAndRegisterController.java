@@ -1,5 +1,6 @@
 package com.nk.controller;
 
+import com.nk.exception.MyException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LoginAndRegisterController {
 
   @RequestMapping(value = "/hello", method = RequestMethod.GET)
-  public String hello() {
-    return "hello world";
+  public String hello() throws Exception{
+     throw  new MyException("error");
   }
 }
