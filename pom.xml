@@ -7,13 +7,15 @@
   <groupId>com.nk</groupId>
   <artifactId>music</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
   <modules>
     <module>base</module>
     <module>admin</module>
     <module>app</module>
     <module>schedule</module>
   </modules>
-  <packaging>pom</packaging>
+
 
   <name>music</name>
   <description>Demo project for Spring Boot</description>
@@ -40,6 +42,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>
@@ -71,8 +79,8 @@
       <scope>test</scope>
     </dependency>
     <!--<dependency>-->
-      <!--<groupId>org.springframework.boot</groupId>-->
-      <!--<artifactId>spring-boot-starter-log4j</artifactId>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-log4j</artifactId>-->
     <!--</dependency>-->
 
     <!-- Json包 -->
