@@ -1,4 +1,4 @@
-package com.nk.dto;
+package com.nk.model.domain;
 
 /**
  * Created by JianHuangsh on 2017/12/8.

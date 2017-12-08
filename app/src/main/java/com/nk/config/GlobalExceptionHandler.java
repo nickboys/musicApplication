@@ -1,7 +1,7 @@
 package com.nk.config;
 
 import com.nk.exception.MyException;
-import com.nk.dto.ErrorInfo;
+import com.nk.model.domain.ErrorInfo;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
