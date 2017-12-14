@@ -5,6 +5,7 @@ import com.nk.repository.UserRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by JianHuangsh on 2017/12/8.
@@ -28,8 +29,9 @@ public class UserService {
     return false;
   }
 
-  public boolean createUser() {
-    return false;
+  @Transactional(rollbackFor = Exception.class)
+  public void createUser(User user) {
+    userRepository.save(user);
   }
 
 
