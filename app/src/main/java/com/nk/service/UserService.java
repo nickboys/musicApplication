@@ -16,7 +16,21 @@ public class UserService {
   private UserRepository userRepository;
 
   public List<User> findUser() {
-    List<User> users= userRepository.findAll();
-    return  users;
+    List<User> users = userRepository.findAll();
+    return users;
   }
+
+  public boolean findByName(String userName) {
+    List<User> users = userRepository.findByUsername(userName);
+    if (users.size() > 0) {
+      return true;
+    }
+    return false;
+  }
+
+  public boolean createUser() {
+    return false;
+  }
+
+
 }

@@ -1,5 +1,6 @@
 package com.nk.model.entity;
 
+import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -23,5 +24,6 @@ public class User {
   private String username;
   @Column(name = "password")
   private String password;
-
+  @Column(name = "create_date")
+  private Date createDate;
 }
