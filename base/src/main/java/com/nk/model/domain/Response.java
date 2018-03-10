@@ -22,6 +22,30 @@ public class Response implements Serializable {
 
   public static final Response SUCCESS = new Response(SUCCESS_RESULT);
 
+  public int getCode() {
+    return code;
+  }
+
+  public void setCode(int code) {
+    this.code = code;
+  }
+
+  public String getResult() {
+    return result;
+  }
+
+  public void setResult(String result) {
+    this.result = result;
+  }
+
+  public Object getData() {
+    return data;
+  }
+
+  public void setData(Object data) {
+    this.data = data;
+  }
+
   public Response(String result) {
     this.code = SUCCESS_CODE;
     this.result = result;
